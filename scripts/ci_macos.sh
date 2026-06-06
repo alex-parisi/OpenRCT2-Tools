@@ -31,6 +31,7 @@ PYTHON_PROJECTS=(
     "OpenRCT2-ObjectCommon"
     "OpenRCT2-VehicleGenerator"
     "OpenRCT2-SceneryGenerator"
+    "OpenRCT2-TrackGenerator"
 )
 
 # Repos with a Blender extension built via scripts/build_plugin_local.py.
@@ -44,6 +45,7 @@ CONSUMER_PROJECTS=(
     "OpenRCT2-ObjectCommon"
     "OpenRCT2-VehicleGenerator"
     "OpenRCT2-SceneryGenerator"
+    "OpenRCT2-TrackGenerator"
 )
 
 FAILED=()
