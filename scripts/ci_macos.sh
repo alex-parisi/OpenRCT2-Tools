@@ -94,9 +94,9 @@ mirror_ci_python() {
         uv run --no-sync pytest --cov --cov-report=term-missing --cov-fail-under=100 || rc=1
         exit "$rc"
     )
-    local status=$?
+    local rc=$?
     rm -rf "$tmp"
-    return "$status"
+    return "$rc"
 }
 
 # ── Lint ─────────────────────────────────────────────────────────────────────

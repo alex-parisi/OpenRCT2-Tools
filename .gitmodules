@@ -10,3 +10,6 @@
 [submodule "OpenRCT2-ObjectCommon"]
 	path = OpenRCT2-ObjectCommon
 	url = https://github.com/alex-parisi/OpenRCT2-ObjectCommon
+[submodule "OpenRCT2-TrackGenerator"]
+	path = OpenRCT2-TrackGenerator
+	url = git@github.com:alex-parisi/OpenRCT2-TrackGenerator.git
