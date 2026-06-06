@@ -1,0 +1,11 @@
+[tool.uv.workspace]
+members = [
+    "OpenRCT2-X7-Renderer",
+    "OpenRCT2-ObjectCommon",
+    "OpenRCT2-VehicleGenerator",
+    "OpenRCT2-SceneryGenerator",
+]
+
+[tool.uv.sources]
+openrct2-x7-renderer = { workspace = true }
+OpenRCT2-ObjectCommon = { workspace = true }
