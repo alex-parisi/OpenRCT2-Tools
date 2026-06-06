@@ -1,0 +1,12 @@
+[submodule "OpenRCT2-SceneryGenerator"]
+	path = OpenRCT2-SceneryGenerator
+	url = https://github.com/alex-parisi/OpenRCT2-SceneryGenerator
+[submodule "OpenRCT2-VehicleGenerator"]
+	path = OpenRCT2-VehicleGenerator
+	url = https://github.com/alex-parisi/OpenRCT2-VehicleGenerator
+[submodule "OpenRCT2-X7-Renderer"]
+	path = OpenRCT2-X7-Renderer
+	url = https://github.com/alex-parisi/OpenRCT2-X7-Renderer
+[submodule "OpenRCT2-ObjectCommon"]
+	path = OpenRCT2-ObjectCommon
+	url = https://github.com/alex-parisi/OpenRCT2-ObjectCommon
