@@ -24,6 +24,7 @@ PLUGIN_PROJECTS=(
     "OpenRCT2-VehicleGenerator"
     "OpenRCT2-SceneryGenerator"
     "OpenRCT2-TrackGenerator"
+    "OpenRCT2-RideGenerator"
 )
 
 if ! command -v blender &>/dev/null; then

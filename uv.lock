@@ -10,6 +10,7 @@ resolution-markers = [
 [manifest]
 members = [
     "openrct2-objectcommon",
+    "openrct2-ridegenerator",
     "openrct2-scenerygenerator",
     "openrct2-trackgenerator",
     "openrct2-vehiclegenerator",
@@ -663,6 +664,48 @@ requires-dist = [
     { name = "pyyaml", specifier = ">=6.0" },
 ]
 provides-extras = ["blender"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "mypy", specifier = ">=1.10" },
+    { name = "pytest", specifier = ">=8.0" },
+    { name = "pytest-cov", specifier = ">=5.0" },
+    { name = "ruff", specifier = ">=0.5" },
+    { name = "types-pyyaml", specifier = ">=6.0" },
+    { name = "yamllint", specifier = ">=1.35" },
+]
+
+[[package]]
+name = "openrct2-ridegenerator"
+version = "0.1.0"
+source = { editable = "OpenRCT2-RideGenerator" }
+dependencies = [
+    { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.13'" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.13'" },
+    { name = "openrct2-objectcommon" },
+    { name = "openrct2-x7-renderer" },
+    { name = "pillow" },
+    { name = "pyyaml" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "mypy" },
+    { name = "pytest" },
+    { name = "pytest-cov" },
+    { name = "ruff" },
+    { name = "types-pyyaml" },
+    { name = "yamllint" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "numpy", specifier = ">=1.26" },
+    { name = "openrct2-objectcommon", editable = "OpenRCT2-ObjectCommon" },
+    { name = "openrct2-x7-renderer", editable = "OpenRCT2-X7-Renderer" },
+    { name = "pillow", specifier = ">=10.0" },
+    { name = "pyyaml", specifier = ">=6.0" },
+]
 
 [package.metadata.requires-dev]
 dev = [

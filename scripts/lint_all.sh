@@ -18,11 +18,13 @@ PYTHON_PROJECTS=(
     "OpenRCT2-VehicleGenerator"
     "OpenRCT2-SceneryGenerator"
     "OpenRCT2-TrackGenerator"
+    "OpenRCT2-RideGenerator"
 )
 YAMLLINT_PROJECTS=(
     "OpenRCT2-VehicleGenerator"
     "OpenRCT2-SceneryGenerator"
     "OpenRCT2-TrackGenerator"
+    "OpenRCT2-RideGenerator"
 )
 
 FAILED=()

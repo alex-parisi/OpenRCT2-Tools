@@ -5,6 +5,7 @@ members = [
     "OpenRCT2-VehicleGenerator",
     "OpenRCT2-SceneryGenerator",
     "OpenRCT2-TrackGenerator",
+    "OpenRCT2-RideGenerator",
 ]
 
 [tool.uv.sources]

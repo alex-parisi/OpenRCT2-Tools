@@ -32,12 +32,14 @@ PYTHON_PROJECTS=(
     "OpenRCT2-VehicleGenerator"
     "OpenRCT2-SceneryGenerator"
     "OpenRCT2-TrackGenerator"
+    "OpenRCT2-RideGenerator"
 )
 
 # Repos with a Blender extension built via scripts/build_plugin_local.py.
 PLUGIN_PROJECTS=(
     "OpenRCT2-VehicleGenerator"
     "OpenRCT2-SceneryGenerator"
+    "OpenRCT2-RideGenerator"
 )
 
 # Depend on sibling packages; run standalone vs PyPI (see "CI mirror").
@@ -46,6 +48,7 @@ CONSUMER_PROJECTS=(
     "OpenRCT2-VehicleGenerator"
     "OpenRCT2-SceneryGenerator"
     "OpenRCT2-TrackGenerator"
+    "OpenRCT2-RideGenerator"
 )
 
 FAILED=()

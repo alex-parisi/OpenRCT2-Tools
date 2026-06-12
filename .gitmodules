@@ -13,3 +13,6 @@
 [submodule "OpenRCT2-TrackGenerator"]
 	path = OpenRCT2-TrackGenerator
 	url = git@github.com:alex-parisi/OpenRCT2-TrackGenerator.git
+[submodule "OpenRCT2-RideGenerator"]
+	path = OpenRCT2-RideGenerator
+	url = git@github.com:alex-parisi/OpenRCT2-RideGenerator.git
