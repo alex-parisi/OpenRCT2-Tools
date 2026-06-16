@@ -11,7 +11,7 @@
 #   ci-mirror    consumer mypy + pytest, py3.11, PyPI siblings (mirrors CI)
 #   wheel-build  scikit-build-core wheel for OpenRCT2-X7-Renderer
 #                (skipped when Embree is not installed via Homebrew)
-#   plugin-build Blender extension zip for VehicleGenerator + SceneryGenerator
+#   plugin-build Blender extension zip for the four generator add-ons
 #                (skipped when `blender` is not on PATH)
 #
 # Prerequisites:
@@ -39,6 +39,7 @@ PYTHON_PROJECTS=(
 PLUGIN_PROJECTS=(
     "OpenRCT2-VehicleGenerator"
     "OpenRCT2-SceneryGenerator"
+    "OpenRCT2-TrackGenerator"
     "OpenRCT2-RideGenerator"
 )
 
@@ -106,7 +107,7 @@ mirror_ci_python() {
 
 # ── Lint ─────────────────────────────────────────────────────────────────────
 # Delegates to lint_all.sh which covers ruff, mypy, yamllint,
-# clang-format, and clang-tidy across all four packages.
+# clang-format, and clang-tidy across all six packages.
 
 section "Lint  ·  all projects"
 run_or_fail "lint" bash "$ROOT/scripts/lint_all.sh"
@@ -196,8 +197,7 @@ if command -v blender &>/dev/null; then
         "import sys;print('PYTAG%d.%d' % sys.version_info[:2])" 2>/dev/null \
         | sed -n 's/^PYTAG//p' | head -1)"
     BLENDER_PY="${BLENDER_PY:-3.13}"
-    for entry in "${PLUGIN_PROJECTS[@]}"; do
-        project="${entry%%:*}"
+    for project in "${PLUGIN_PROJECTS[@]}"; do
         section "Blender extension build  ·  $project"
         echo "  $BLENDER_VER  (CPython $BLENDER_PY)"
         OUT_DIR="$ROOT/$project/.ext-check"
@@ -214,8 +214,8 @@ else
     section "Blender extension build"
     echo "  blender not found — skipping"
     echo "  Install from: https://www.blender.org/download/"
-    for entry in "${PLUGIN_PROJECTS[@]}"; do
-        SKIPPED+=("${entry%%:*} (blender extension — blender not installed)")
+    for project in "${PLUGIN_PROJECTS[@]}"; do
+        SKIPPED+=("$project (blender extension — blender not installed)")
     done
 fi
 

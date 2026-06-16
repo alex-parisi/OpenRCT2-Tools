@@ -35,7 +35,7 @@ else
     echo
 fi
 
-# ── Python tests (all four projects) ────────────────────────────────────────
+# ── Python tests (all six projects) ─────────────────────────────────────────
 for project in "${PROJECTS[@]}"; do
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
     echo "  Running Python tests: $project"

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run every lint check used in CI across all four projects.
+# Run every lint check used in CI across all six projects.
 #
 # Prerequisites: the workspace .venv must be up to date (`uv sync --all-groups`).
 # clang-format and clang-tidy are optional (Homebrew LLVM or system install);
